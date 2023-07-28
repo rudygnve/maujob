@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Reviews = () => {
   return (
-    <div className="px-3 w-full mb-16 bg-primary py-20">
+    <div className="px-3 w-full mb-16 bg-primary py-10 sm:py-20">
       <div className="w-full max-w-7xl mx-auto flex flex-col">
         <div className="text-center w-full flex flex-col mb-16">
           <h2 className="text-black text-3xl md:text-4xl xl:text-5xl font-bold mb-4">

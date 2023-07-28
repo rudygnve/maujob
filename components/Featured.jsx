@@ -8,7 +8,7 @@ import { MdOutlineNotificationImportant } from "react-icons/md";
 
 const Featured = () => {
   return (
-    <div className="px-3 mb-28 w-full max-w-7xl mx-auto">
+    <div className="px-3 mb-12 sm:mb-28 w-full max-w-7xl mx-auto">
       <div className="flex flex-col items-center justify-center gap-1 mb-10 text-center">
         <h2 className="text-3xl font-bold text-black">Featured Jobs</h2>
         <span className="text-gray-500 text-lg font-medium">

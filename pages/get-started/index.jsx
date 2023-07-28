@@ -29,7 +29,11 @@ const index = () => {
   const router = useRouter();
 
   const handleNextStep = () => {
-    router.push("/get-started/register");
+    if (isEmployer) {
+      router.push("/get-started/employer");
+    } else if (isCandidate) {
+      router.push("/get-started/candidate");
+    }
   };
 
   return (
@@ -61,7 +65,11 @@ const index = () => {
         className="px-5 py-3 rounded-md text-white font-medium bg-black text-base transition duration-200 flex items-center gap-2 group disabled:opacity-60"
       >
         Continue
-        <BsArrowRight className="text-lg group-hover:translate-x-1 transtion duration-200" />
+        <BsArrowRight
+          className={`text-lg ${
+            isDisabled ? "" : "group-hover:translate-x-1"
+          } transtion duration-200`}
+        />
       </button>
     </div>
   );

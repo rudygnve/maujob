@@ -6,7 +6,7 @@ import { categories } from "@/data";
 
 const Categories = () => {
   return (
-    <div className="px-3 py-28 w-full max-w-7xl mx-auto">
+    <div className="px-3 py-12 sm:py-28 w-full max-w-7xl mx-auto">
       <div className="w-full flex flex-row items-center justify-between mb-10">
         <div className="flex flex-col gap-2">
           <h2 className="text-xl md:text-3xl font-bold text-black">
@@ -18,7 +18,7 @@ const Categories = () => {
         </div>
         <Link
           href="/category"
-          className="text-black text-base font-semibold flex items-center gap-2 group"
+          className="text-black text-base font-semibold items-center gap-2 group hidden sm:flex"
         >
           All Categories
           <FaArrowRightLong className="group-hover:translate-x-1 transition duration-200" />

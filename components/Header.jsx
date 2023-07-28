@@ -16,16 +16,16 @@ const Header = () => {
             Post your resume, connect with employers, and embark on a fulfilling
             career journey.
           </p>
-          <form className="w-full max-w-full items-center h-14 bg-white flex flex-row p-2 rounded-md">
+          <form className="w-full max-w-full items-center h-12 sm:h-14: bg-white flex flex-row p-2 rounded-md">
             <div className="flex items-center flex-1">
-              <IoSearch className="text-3xl text-black" />
+              <IoSearch className="text-2xl sm:text-3xl text-black" />
               <input
                 type="text"
-                className="flex-1 px-3 w-full h-full bg-transparent sm:text-xl text-sm: placeholder:text-gray-400"
+                className="flex-1 px-3 w-full h-full bg-transparent text-sm sm:text-xl placeholder:text-gray-400"
                 placeholder="Search Jobs, Employers, Candidates..."
               />
             </div>
-            <button className="px-4 h-full rounded-md bg-black text-white">
+            <button className="px-4 h-full text-sm sm:text-base rounded-md bg-black text-white">
               Search
             </button>
           </form>

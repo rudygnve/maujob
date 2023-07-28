@@ -5,7 +5,7 @@ import { posts } from "@/data";
 
 const Blog = () => {
   return (
-    <div className="px-3 mb-28 w-full max-w-7xl mx-auto">
+    <div className="px-3 mb-12 sm:mb-28 w-full max-w-7xl mx-auto">
       <div className="w-full flex flex-row items-center justify-between mb-10">
         <h2 className="text-4xl font-bold text-black">Blog</h2>
         <Link
