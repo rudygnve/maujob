@@ -28,7 +28,7 @@ const Categories = () => {
         {categories.map((category, i) => (
           <Link
             key={i}
-            href="/category/accounting"
+            href={`/category/${category?.slug}`}
             className="flex bg-gray-200 transition duration-200 hover:bg-slate-700 group hover:text-white rounded-md w-full h-36 pl-8 items-center group"
           >
             <div className="flex flex-col">

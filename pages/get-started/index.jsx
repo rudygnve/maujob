@@ -2,11 +2,14 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { useRouter } from "next/router";
+import { useUserAuth } from "@/context/UserAuth";
 
 const index = () => {
+  const { user } = useUserAuth();
   const [isEmployer, setIsEmployer] = useState(false);
   const [isCandidate, setIsCandidate] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
+  const router = useRouter();
 
   const employerSelected = () => {
     setIsCandidate(false);
@@ -19,14 +22,16 @@ const index = () => {
   };
 
   useEffect(() => {
-    if (!isCandidate && !isEmployer) {
-      setIsDisabled(true);
+    if (!user) {
+      if (!isCandidate && !isEmployer) {
+        setIsDisabled(true);
+      } else {
+        setIsDisabled(false);
+      }
     } else {
-      setIsDisabled(false);
+      router.push("/profile");
     }
   }, [isCandidate, isEmployer]);
-
-  const router = useRouter();
 
   const handleNextStep = () => {
     if (isEmployer) {

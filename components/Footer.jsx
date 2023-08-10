@@ -204,7 +204,7 @@ const Footer = () => {
               Rudy Genave
             </Link>
           </span>
-          <ul className="flex flex-wrap gap-5">
+          <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
             <li>
               <Link href="" className="text-gray-700 text-sm">
                 About

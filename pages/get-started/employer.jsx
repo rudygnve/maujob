@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useUserAuth } from "@/context/UserAuth";
+import { useRouter } from "next/router";
 
 const register = () => {
   const [name, setName] = useState("");
@@ -7,6 +9,13 @@ const register = () => {
   const [phone, setPhone] = useState("");
   const [isChecked, setIsChecked] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
+  const { user } = useUserAuth();
+
+  useEffect(() => {
+    if (user) {
+      useRouter().push("/profile");
+    }
+  }, []);
 
   useEffect(() => {
     if (!name || !email || !address || !phone || !isChecked) {

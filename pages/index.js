@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen h-screen">
+    <main className="w-full min-h-screen h-screen selection:text-white selection:bg-black">
       <Helmet>
         <meta charSet="utf-8" />
         <title>MauJob - Find Your Dream Job in Mauritius</title>

@@ -47,12 +47,12 @@ const Featured = () => {
                   <div className="flex flex-col gap-1">
                     <Link
                       className="w-[fit-content] text-sm font-semibold text-secondary transition duration-200 hover:underline underline-offset-2"
-                      href="/"
+                      href={`/category/${job?.category?.slug}`}
                     >
-                      {job?.category}
+                      {job?.category?.title}
                     </Link>
                     <Link
-                      href="#"
+                      href={`/jobs/${job?.jobId}`}
                       className="w-[fit-content] text-lg sm:text-2xl font-semibold transition duration hover:text-secondary"
                     >
                       {job?.name}
