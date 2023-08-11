@@ -69,6 +69,7 @@ export const featuredJobs = [
     salary: "18,200",
     deadline: "July 20, 2023",
     urgent: false,
+    featured: true,
   },
   {
     category: {
@@ -87,6 +88,7 @@ export const featuredJobs = [
     salary: "15,000",
     deadline: "August 15, 2023",
     urgent: true,
+    featured: true,
   },
   {
     category: {
@@ -105,6 +107,7 @@ export const featuredJobs = [
     salary: "35,000",
     deadline: "July 20, 2023",
     urgent: false,
+    featured: true,
   },
   {
     category: {
@@ -123,6 +126,7 @@ export const featuredJobs = [
     salary: "15,000",
     deadline: "July 20, 2023",
     urgent: false,
+    featured: true,
   },
 ];
 
@@ -150,5 +154,103 @@ export const posts = [
     createdAt: "July 10, 2023",
     category: "Self-Development",
     createdBy: "Rudy Genave",
+  },
+];
+
+export const allJobs = [
+  {
+    category: {
+      title: "Accounting",
+      slug: "accounting",
+    },
+    name: "Auditor",
+    jobId: "dfvub9q0e4gv0934guvbieru0",
+    photo: "/assets/deloitte.png",
+    publishedAt: "June 20, 2023",
+    location: "Ebène",
+    jobType: {
+      name: "Full-Time",
+      slug: "full-time",
+    },
+    salary: "18,200",
+    deadline: "July 20, 2023",
+    urgent: false,
+    featured: false,
+  },
+  {
+    category: {
+      title: "Sales & Marketing",
+      slug: "sales-marketing",
+    },
+    name: "Cashier",
+    jobId: "0934utnvjdfn034gerg",
+    photo: "/assets/islandhaze.png",
+    publishedAt: "June 25, 2023",
+    location: "Port Louis",
+    jobType: {
+      name: "Full-Time",
+      slug: "full-time",
+    },
+    salary: "15,000",
+    deadline: "August 15, 2023",
+    urgent: true,
+    featured: false,
+  },
+  {
+    category: {
+      title: "Project Manager",
+      slug: "project-manager",
+    },
+    name: "Senior Manager",
+    jobId: "vdnwe9034utgnvjen4303fg",
+    photo: "/assets/gc.jpg",
+    publishedAt: "June 20, 2023",
+    location: "Port Louis",
+    jobType: {
+      name: "Part-Time",
+      slug: "part-time",
+    },
+    salary: "35,000",
+    deadline: "July 20, 2023",
+    urgent: false,
+    featured: true,
+  },
+  {
+    category: {
+      title: "Healthcare",
+      slug: "healthcare",
+    },
+    name: "Laboratory Technician",
+    jobId: "urthbnwe54g5uhw456n423",
+    photo: "/assets/biosante.png",
+    publishedAt: "June 20, 2023",
+    location: "Beau Bassin",
+    jobType: {
+      name: "Full-Time",
+      slug: "full-time",
+    },
+    salary: "15,000",
+    deadline: "July 20, 2023",
+    urgent: false,
+    featured: false,
+  },
+  {
+    category: {
+      title: "Accounting",
+      slug: "accounting",
+    },
+    name: "Auditor",
+    jobId: "dfvub9q0e4gv0934guvbieru0",
+    photo: "/assets/deloitte.png",
+    publishedAt: "June 20, 2023",
+    location: "Ebène",
+    jobType: {
+      name: "Full-Time",
+      slug: "full-time",
+    },
+    salary: "18,200",
+    deadline: "July 20, 2023",
+    urgent: false,
+    featured: false,
   },
 ];

@@ -47,7 +47,7 @@ const Navbar = () => {
       <div className="flex flex-row items-center justify-between">
         <div className="flex flex-row items-center">
           <Link href={user ? "/find-jobs" : "/"}>
-            <img src="/assets/logo.png" className="sm:w-40 w-32" alt="" />
+            <img src="/assets/logo.png" className="sm:w-48 w-32" alt="" />
           </Link>
           <ul
             className={`xl:ml-[70px] ml-0 flex flex-col items-center xl:items-start justify-center xl:justify-start xl:flex-row gap-10 text-lg xl:text-black font-semibold transition-all duration-200 fixed xl:static left-0 ${
@@ -96,7 +96,7 @@ const Navbar = () => {
               alt=""
             />
             {show && (
-              <div className="absolute overflow-hidden flex flex-col w-[300px] h-auto translate-y-[100%] shadow-xl bottom-[-15px] right-0 bg-white">
+              <div className="absolute overflow-hidden flex flex-col w-[300px] h-auto translate-y-[100%] shadow-xl bottom-[-15px] right-0 bg-white z-[1000]">
                 <div className="flex gap-3 p-4 items-center border-[1px] border-x-0 border-t-0 border-solid border-gray-200">
                   {user.photoURL ? (
                     <img

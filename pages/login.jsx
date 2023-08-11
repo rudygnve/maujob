@@ -71,7 +71,7 @@ const candidate = () => {
       await logIn(email, password);
       toast.success("Login Successfully!");
       setTimeout(() => {
-        router.push("/");
+        router.push("/find-jobs");
       }, 2000);
     } catch (error) {
       console.log(error.message);
@@ -123,7 +123,7 @@ const candidate = () => {
                     {isLoading ? (
                       <img
                         src="/assets/loading.png"
-                        className="w-10 animate-spin"
+                        className="w-8 animate-spin"
                       />
                     ) : (
                       "Reset Password"
@@ -208,7 +208,7 @@ const candidate = () => {
               {!isSubmitting ? (
                 "Login"
               ) : (
-                <img src="/assets/loading.png" className="w-10 animate-spin" />
+                <img src="/assets/loading.png" className="w-8 animate-spin" />
               )}
             </button>
           </form>
