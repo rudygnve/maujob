@@ -23,7 +23,7 @@ const candidate = () => {
     if (user) {
       router.push("/profile");
     }
-  }, []);
+  }, [router.pathname]);
 
   const handleSignInWithGoogle = async () => {
     setIsDisabled(true);
@@ -31,7 +31,7 @@ const candidate = () => {
       await googleSignIn();
       toast.success("Sign in Successfully!");
       setTimeout(() => {
-        router.push("/");
+        router.push("/find-jobs");
       }, 3000);
     } catch (err) {
       toast.error("Something Went Wrong!");
@@ -157,6 +157,11 @@ const candidate = () => {
       )}
       <div className="flex-1 w-full h-full bg-primary flex items-center justify-center px-3 py-5">
         <div className="p-5 border-[3px] border-solid border-black bg-white max-w-sm w-full">
+          <div className="w-full flex items-center justify-center mb-6">
+            <Link href="/" className="max-w-[150px]">
+              <img src="/assets/logo.png" alt="logo" className="w-full" />
+            </Link>
+          </div>
           <h1 className="text-2xl font-semibold text-black mb-2">
             Login to continue
           </h1>
